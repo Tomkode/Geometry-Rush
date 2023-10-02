@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://cimado2fdw6xf"]
+
+[ext_resource type="Script" path="res://HUD.gd" id="1_tnhkq"]
+[ext_resource type="Texture2D" uid="uid://dkath3wy06o7p" path="res://art/Player/Andrew.png" id="2_ol3ki"]
+[ext_resource type="Texture2D" uid="uid://ceooyf3ynsu3k" path="res://art/Player/Steve.png" id="3_faotx"]
+[ext_resource type="Texture2D" uid="uid://bs8f7h1rbtt16" path="res://art/Player/Axel.png" id="4_lkygf"]
+[ext_resource type="Texture2D" uid="uid://dj47nnulyv06j" path="res://art/Player/Goofy.png" id="5_1pqdb"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_tnhkq")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_right = 60.0
+offset_bottom = 26.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "Geometry Rush
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "Play"
+
+[node name="SwitchSkinButton" type="OptionButton" parent="."]
+anchors_preset = -1
+anchor_left = 0.278
+anchor_top = 0.593
+anchor_right = 0.729
+anchor_bottom = 0.716
+offset_left = -8.25604
+offset_top = -12.264
+offset_right = 6.19196
+offset_bottom = 4.03198
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 64
+alignment = 1
+item_count = 4
+selected = 0
+popup/item_0/text = "Andrew"
+popup/item_0/icon = ExtResource("2_ol3ki")
+popup/item_0/id = 0
+popup/item_1/text = "Steve"
+popup/item_1/icon = ExtResource("3_faotx")
+popup/item_1/id = 1
+popup/item_2/text = "Axel"
+popup/item_2/icon = ExtResource("4_lkygf")
+popup/item_2/id = 2
+popup/item_3/text = "Goofy"
+popup/item_3/icon = ExtResource("5_1pqdb")
+popup/item_3/id = 3
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Countdown" type="Label" parent="StartTimer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 91.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "
+"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="item_selected" from="SwitchSkinButton" to="." method="_on_switch_skin_button_item_selected"]
+[connection signal="pressed" from="SwitchSkinButton" to="." method="_on_switch_skin_button_pressed"]

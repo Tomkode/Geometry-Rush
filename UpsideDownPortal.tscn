@@ -1,0 +1,154 @@
+[gd_scene load_steps=35 format=3 uid="uid://ip1hvhgaqqx"]
+
+[ext_resource type="Texture2D" uid="uid://iym6dh10aauj" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_000.png" id="1_c8gui"]
+[ext_resource type="Script" path="res://UpsideDownPortal.gd" id="1_j8te8"]
+[ext_resource type="Texture2D" uid="uid://cun4hfpbp730g" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_001.png" id="2_0t463"]
+[ext_resource type="Texture2D" uid="uid://u06i6c37wv0y" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_002.png" id="3_yk8yk"]
+[ext_resource type="Texture2D" uid="uid://bewhr1fxwifb2" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_003.png" id="4_2nyy1"]
+[ext_resource type="Texture2D" uid="uid://il8mhlmlwso" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_004.png" id="5_88j5p"]
+[ext_resource type="Texture2D" uid="uid://dhusv8wcomwpg" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_005.png" id="6_vukei"]
+[ext_resource type="Texture2D" uid="uid://of07oyvpufuc" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_006.png" id="7_7kw5e"]
+[ext_resource type="Texture2D" uid="uid://bnrguvk0yw6g" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_007.png" id="8_2o44o"]
+[ext_resource type="Texture2D" uid="uid://bf6ogp4mgtqqi" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_008.png" id="9_ntnes"]
+[ext_resource type="Texture2D" uid="uid://xojbkvj4tkus" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_009.png" id="10_4s44w"]
+[ext_resource type="Texture2D" uid="uid://ckoxgfvvcfqex" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_010.png" id="11_na141"]
+[ext_resource type="Texture2D" uid="uid://ckewkafqo75ny" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_011.png" id="12_wrlyw"]
+[ext_resource type="Texture2D" uid="uid://tlfb6bfc820h" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_012.png" id="13_m2l03"]
+[ext_resource type="Texture2D" uid="uid://hj7qw332r325" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_013.png" id="14_e2x7a"]
+[ext_resource type="Texture2D" uid="uid://d10valkbeexu" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_014.png" id="15_hha0t"]
+[ext_resource type="Texture2D" uid="uid://cbvgb4f7glv08" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_015.png" id="16_a0ia4"]
+[ext_resource type="Texture2D" uid="uid://big3q1g17b7c" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_016.png" id="17_d5f0k"]
+[ext_resource type="Texture2D" uid="uid://df2wnkfy35fep" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_017.png" id="18_tmwax"]
+[ext_resource type="Texture2D" uid="uid://bdbxhblverj60" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_018.png" id="19_jkbuj"]
+[ext_resource type="Texture2D" uid="uid://chgjvro6ke4pr" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_019.png" id="20_6gp2o"]
+[ext_resource type="Texture2D" uid="uid://cx68hshp43lll" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_020.png" id="21_2kns2"]
+[ext_resource type="Texture2D" uid="uid://4oajjhdpduy4" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_021.png" id="22_3o5qd"]
+[ext_resource type="Texture2D" uid="uid://bt8saxsch2upj" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_022.png" id="23_sk6hy"]
+[ext_resource type="Texture2D" uid="uid://bs0fbmtaco3pu" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_023.png" id="24_aymhc"]
+[ext_resource type="Texture2D" uid="uid://doxwk577gwfim" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_024.png" id="25_x7jnx"]
+[ext_resource type="Texture2D" uid="uid://clfsxfa1j35qn" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_025.png" id="26_6cbbs"]
+[ext_resource type="Texture2D" uid="uid://btti6oo1wingv" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_026.png" id="27_fsbvi"]
+[ext_resource type="Texture2D" uid="uid://cjj6je708wg55" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_027.png" id="28_o5as5"]
+[ext_resource type="Texture2D" uid="uid://bf38b8a42r0ok" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_028.png" id="29_7iias"]
+[ext_resource type="Texture2D" uid="uid://d3n4rwmbeqc41" path="res://art/Effect_EldenRing_1/Effect_EldenRing_1_029.png" id="30_owewq"]
+[ext_resource type="AudioStream" uid="uid://d0e58xc2g8bq2" path="res://sound/EnterPortal.mp3" id="32_sg7xo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vwxg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_c8gui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0t463")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yk8yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2nyy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_88j5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vukei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7kw5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2o44o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ntnes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4s44w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_na141")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wrlyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_m2l03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_e2x7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hha0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_a0ia4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_d5f0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tmwax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jkbuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6gp2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_2kns2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_3o5qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_sk6hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_aymhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_x7jnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_6cbbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_fsbvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_o5as5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7iias")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_owewq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vxnbg"]
+radius = 29.0172
+
+[node name="UpsideDownPortal" type="Area2D"]
+script = ExtResource("1_j8te8")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_7vwxg")
+frame_progress = 0.296891
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vxnbg")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("32_sg7xo")
+volume_db = -2.811
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvvc2jmfmxnhk"]
+
+[ext_resource type="Texture2D" uid="uid://b4w0hh23te04p" path="res://art/GraySquare.png" id="1_cbjqs"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jiie0"]
+friction = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4vvv"]
+size = Vector2(32, 32)
+
+[node name="Tile" type="StaticBody2D"]
+position = Vector2(112, -16)
+physics_material_override = SubResource("PhysicsMaterial_jiie0")
+metadata/_edit_horizontal_guides_ = [-136.0]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 0)
+texture = ExtResource("1_cbjqs")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y4vvv")
+metadata/_edit_group_ = true

@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://duo1c8trf3w0m"]
+
+[ext_resource type="Script" path="res://GameOverHUD.gd" id="1_87q3y"]
+
+[node name="GameOverHUD" type="CanvasLayer"]
+script = ExtResource("1_87q3y")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -184.0
+offset_top = 168.0
+offset_right = 181.0
+offset_bottom = 259.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "Game Over!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.0
+offset_top = -48.0
+offset_right = 116.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "Restart
+"
+
+[node name="Coins" type="Label" parent="."]
+offset_right = 271.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 32
+text = "Coins Collected: 0"
+
+[node name="Percentage" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -319.0
+offset_bottom = 48.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "Level Completed: 0%"
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

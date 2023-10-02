@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3 uid="uid://cnky5y12i8akr"]
+
+[ext_resource type="Texture2D" uid="uid://dw5b4lxyq7q2b" path="res://art/End_Portal/pixil-frame-0.png" id="1_gbq12"]
+[ext_resource type="Script" path="res://EndPortal.gd" id="1_k8l2d"]
+[ext_resource type="Texture2D" uid="uid://tyxax247hdxc" path="res://art/End_Portal/pixil-frame-1.png" id="2_t5yep"]
+[ext_resource type="Texture2D" uid="uid://c1ks2cqucgyn4" path="res://art/End_Portal/pixil-frame-2.png" id="3_0r80x"]
+[ext_resource type="Texture2D" uid="uid://c1bi86ghpstno" path="res://art/End_Portal/pixil-frame-3.png" id="4_6fdbm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1dr86"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gbq12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t5yep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0r80x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6fdbm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1qtra"]
+radius = 32.0
+
+[node name="EndPortal" type="Area2D"]
+script = ExtResource("1_k8l2d")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1dr86")
+frame_progress = 0.301358
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1qtra")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
